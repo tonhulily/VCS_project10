@@ -16,4 +16,7 @@ class DownloadRepository(
             onProgress
         )
     }
+    fun getDownloads(): List<DownloadItem> {
+        return DownloadSource.getSampleDownloads()
+    }
 }
