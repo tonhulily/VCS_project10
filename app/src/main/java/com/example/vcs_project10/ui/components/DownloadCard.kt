@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Download
+import androidx.compose.material.icons.filled.DownloadForOffline
 import androidx.compose.material.icons.filled.PauseCircle
 import androidx.compose.material.icons.filled.PlayCircle
 import androidx.compose.material3.Button
@@ -48,12 +49,12 @@ fun DownloadCard(
         item.progress >= 1f -> {
             actionColor = Color(0xFF22C55E)
             actionText = "Download Again"
-            Icons.Default.Download
+            Icons.Default.DownloadForOffline
         }
         else -> {
             actionColor = Color(0xFF3B82F6)
             actionText = "Download"
-            Icons.Default.Download
+            Icons.Default.DownloadForOffline
         }
     }
     val statusText = when {
